@@ -17,6 +17,8 @@ An implimentation of both the 2-instruction and OISC versions of
 ./zig-out/bin/id-machine <code file> <output file>
 ```
 
+To exit a program, dereference outside of accessible memory.
+
 ### Header Byte
 
 The first byte of the code file must be a header byte in the following format:
