@@ -25,10 +25,10 @@ The first byte of the code file must be a header byte in the following format:
 ```
 aaaabbbc
 ```
-Where `a` is control the amount of cells (a value of 0 creates 0x10000 cells,
-a value of 1 creates 0x20000, etc.). `b` controls the ammount of bits ignored
-at the end of 2-instruction mode. If `c` is 0, then the code is interpreted in
-OISC mode, otherwise it is interpreted in 2-instruction mode.
+Where `a` controls the amount of cells (0x10000 * (1 + a) cells). `b` controls
+the ammount of bits ignored at the end of 2-instruction mode. If `c` is 0,
+then the code is interpreted in OISC mode, otherwise it is interpreted in
+2-instruction mode.
 
 ### OISC Mode
 
